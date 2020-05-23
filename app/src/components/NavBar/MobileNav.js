@@ -1,6 +1,7 @@
 import React from 'react';
+import { Motion, spring } from 'react-motion';
 
-const MobileNav = () => {
+const MobileNav = ({ handleClick, selection }) => {
     return (
         <div>
            MobileNav
