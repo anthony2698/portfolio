@@ -6,7 +6,7 @@ import { useMediaQuery } from 'react-responsive';
 import { useHistory } from 'react-router-dom';
 
 const Header = () => {
-    const[ selection, setSelection ] = useState(0);
+    const[selection, setSelection] = useState(0);
     const history = useHistory();
 
     const handleClick = e => {

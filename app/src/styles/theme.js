@@ -4,7 +4,8 @@ const theme = {
         darkBrown: '#38040E',
         brown: '#640D14',
         red: '#800E13',
-        lightRed: "#AD2831"
+        lightRed: '#AD2831',
+        white: '#FFFFFF'
     },
     fontSizes: {
         title: '3rem',
@@ -13,7 +14,7 @@ const theme = {
         tablet: '@media (max-width: 799px)',
         desktop: '@media (max-width: 800px'
     },
-    font: ''
+    font: 'Raleway, sans-serif'
 }
 
 export default theme;

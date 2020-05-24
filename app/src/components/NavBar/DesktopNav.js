@@ -3,8 +3,8 @@ import { HeaderContainer, StyledLink } from '../../styles/GlobalStyles';
 
 const DesktopNav = ({ handleClick, selection }) => {
     return (
-        <div>
-            <HeaderContainer>
+        <HeaderContainer>
+            <img></img>
                 <nav>
                     <StyledLink
                         to='/'
@@ -15,7 +15,7 @@ const DesktopNav = ({ handleClick, selection }) => {
                         Home
                     </StyledLink>
                     <StyledLink
-                        to='/'
+                        to='/projects'
                         id={1}
                         onClick={handleClick}
                         selected={selection === 1}
@@ -23,7 +23,7 @@ const DesktopNav = ({ handleClick, selection }) => {
                         Projects
                     </StyledLink>
                     <StyledLink
-                        to='/'
+                        to='/skills'
                         id={2}
                         onClick={handleClick}
                         selected={selection === 2}
@@ -31,7 +31,7 @@ const DesktopNav = ({ handleClick, selection }) => {
                         Skills
                     </StyledLink>
                     <StyledLink
-                        to='/'
+                        to='/about'
                         id={3}
                         onClick={handleClick}
                         selected={selection === 3}
@@ -39,7 +39,7 @@ const DesktopNav = ({ handleClick, selection }) => {
                         About
                     </StyledLink>
                     <StyledLink
-                        to='/'
+                        to='/contact'
                         id={4}
                         onClick={handleClick}
                         selected={selection === 4}
@@ -47,7 +47,7 @@ const DesktopNav = ({ handleClick, selection }) => {
                         Contact
                     </StyledLink>
                     <StyledLink
-                        to='/'
+                        to='/resume'
                         id={5}
                         onClick={handleClick}
                         selected={selection === 5}
@@ -55,8 +55,7 @@ const DesktopNav = ({ handleClick, selection }) => {
                         Resume
                     </StyledLink>
                 </nav>
-            </HeaderContainer>
-        </div>
+        </HeaderContainer>
     );
 }
 
