@@ -26,4 +26,16 @@ export const HeaderContainer = styled.header`
     height: ${props => props.expand ? '440px' : '80px'};
     flex-direction: ${props => props.expand ? 'column' : 'row'};
     align-items: ${props => props.expand ? 'flex-start' : 'center'};
+
+
+`;
+
+export const MobileContainer = styled(HeaderContainer)`
+    position: absolute;
+    border: none; 
+
+    .hamburger-container {
+        cursor: pointer;
+        margin-right: 20px;
+    }
 `;
