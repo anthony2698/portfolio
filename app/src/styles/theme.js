@@ -1,11 +1,10 @@
 const theme = {
     colors: {
-        darkBlack: '#250902',
-        darkBrown: '#38040E',
-        brown: '#640D14',
-        red: '#800E13',
-        lightRed: '#AD2831',
-        white: '#FFFFFF'
+        lightTeal: '#caf0f8',
+        teal: '#90e0ef',
+        babyBlue:'#00b4d8',
+        lightBlue: '#0077b6',
+        blue: '#03045e'
     },
     fontSizes: {
         title: '3rem',
