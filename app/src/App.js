@@ -3,11 +3,9 @@ import { Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Main from './pages/Main';
-import ProjectPage from './pages/ProjectsPage'
-import SkillPage from './pages/SkillPage';
+import ProjectsPage from './pages/ProjectsPage'
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-import ResumePage from './pages/ResumePage';
 
 const App = () => {
     return (
@@ -16,20 +14,14 @@ const App = () => {
             <Route exact path='/'>
                 <Main />
             </Route>
-            <Route exact path='/projects'>
-                <ProjectPage />
-            </Route>
-            <Route path='/skills'>
-                <SkillPage/>
-            </Route>
             <Route path='/about'>
                 <AboutPage/>
             </Route>
-            <Route path='/contact'>
-                <ContactPage/>
+            <Route exact path='/projects'>
+                <ProjectsPage />
             </Route>
-            <Route path='/resume'>
-                <ResumePage/>
+            <Route exact path='/contact'>
+                <ContactPage />
             </Route>
         </div>
     );
