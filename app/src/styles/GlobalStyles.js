@@ -1,39 +1,27 @@
 import styled from 'styled-components';
+import { Github, Linkedin} from '@styled-icons/boxicons-logos';
 import theme from './theme';
 
 import { Link } from 'react-router-dom'
 
-//Highlight Text
-export const HighlightText = styled.a`
-    color: ${theme.colors.blue};
-    margin: 0;
-    display: inline;
-    font-size: ${props => props.about ? '1.3rem' : theme.fontSizes.title};
-    text-align: center;
-    font-family: ${theme.font};
-    cursor: ${props => props.about ? 'pointer' : 'default'};
-    ${theme.breakpoints.tablet}{
-        font-size: ${props => props.about ? '1.3rem' : '2rem'};
-    }
-`;
-
 // Header Styles
 export const StyledLink = styled(Link)`
     text-decoration: none;
-    color: ${props => props.selected ? theme.colors.babyBlue : theme.colors.lightTeal};
+    color: ${props => props.selected ? theme.colors.green : theme.colors.lightestSlate};
     margin: ${props => props.mobile ? ' 20px 0' : '0 20px'};
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: ${theme.font};
+    font-weight: 300;
     text-align: center;
     &:hover{
-        color: ${theme.colors.yellow};
+        color: ${theme.colors.white};
         transition: color 1.2s ease-in;
     };
 `;
 
 export const HeaderContainer = styled.header`
-    background-color: ${theme.colors.blue};
-    border-bottom: 5px solid ${theme.colors.babyBlue};
+    background-color: ${theme.colors.navy};
+    border-bottom: 3px solid ${theme.colors.lightestNavy};
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -45,7 +33,6 @@ export const HeaderContainer = styled.header`
 export const MobileContainer = styled(HeaderContainer)`
     position: absolute;
     border: none; 
-
     .hamburger-container {
         cursor: pointer;
         margin-right: 20px;
@@ -65,53 +52,84 @@ export const MainContainer = styled.div`
     position: relative;
     height: calc(100vh - 85px);
     .text-container {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        flex-direction: column;
         position: absolute;
-        width: 80%;
-        top: 50%;
+        width: 55%;
+        height: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        h1 { 
+        h1 {
             font-family: ${theme.font};
-            color: ${theme.colors.white};
-            font-size: ${theme.fontSizes.title};
-            text-align: center;
+            font-weight: 300;
+            margin-bottom: 15px;
+            color: ${theme.colors.green};
+            font-size: ${theme.fontSizes.titleLine};
+            text-align: left;
+            ${theme.breakpoints.tablet}{
+                font-size: 2rem;
+            }
+        }
+        h2 { 
+            margin-bottom: 15px;
+            font-family: ${theme.font};
+            font-weight: 700;
+            color: ${theme.colors.lightestNavy};
+            font-size: ${theme.fontSizes.titles};
+            text-align: left;
             ${theme.breakpoints.tablet}{
                 font-size: 2rem;
             }
         }
     }
     .button-container {
-        // display: flex;
-        // flex-wrap: wrap;
-        // margin: 10px auto;
-        // width: 100%;
-        // justify-content: center;
-        // .button{
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     border: 2px solid ${theme.colors.lightBlue};
-        //     font-family: ${theme.font};
-        //     font-size: 1.3rem;
-        //     width: 120px;
-        //     height: 30px;
-        //     margin: 10px;
-        //     cursor: pointer;
-        //     &:hover{
-        //         background-color: ${theme.colors.lightBlue};
-        //         transition: background-color .5s ease;
-        //     }
-        //     ${theme.breakpoints.tablet}{
-        //         border: 1px solid ${theme.colors.lightBlue};
-        //     }
-        // }
-        // ${theme.breakpoints.tablet}{
-        //     margin: 30px auto;
-        // }
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+            .button{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               border: 1px solid ${theme.colors.green};
+               padding: 10px;
+               border-radius: 5px;
+               font-family: ${theme.font};
+               font-size: 1.1rem;
+               width: 120px;
+               height: 30px;
+               margin: 10px;
+               cursor: pointer;
+                    &:hover{
+                        background-color: ${theme.colors.slate};
+                        transition: background-color .5s ease;
+                 }
+            ${theme.breakpoints.tablet}{
+                border: 1px solid ${theme.colors.green};
+            }
+        }
+        ${theme.breakpoints.tablet}{
+            margin: 30px auto;
+        }
     }
 `;
 
 export const ButtonLink = styled(Link)`
+    color: ${theme.colors.green};
     text-decoration: none;
-    color: ${theme.colors.white};
+`;
+
+export const GitHubLogo = styled(Github)`
+    color: ${theme.colors.green};
+    width: 55px;
+`;
+
+export const LinkedInLogo = styled(Linkedin)`
+    color: ${theme.colors.green};
+    width: 50px;
 `;

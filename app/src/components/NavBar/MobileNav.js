@@ -25,13 +25,13 @@ const MobileNav = ({ handleClick, selection }) => {
                             <HamburgerMenu
                                 isOpen={open}
                                 menuClicked={handleMenuClick}
-                                color={theme.colors.white}
+                                color={theme.colors.teal}
                             />
                         </div>
                     </MobileContainer>
                     <Motion 
                         defaultStyle={{top: -300}}
-                        style={{top: spring(open ? 50 : -300)}}
+                        style={{top: spring(open ? 80 : -300)}}
                     >
                         {style => (
                             <MobileNavContainer open={open} style={{top: style.top}}>
@@ -46,7 +46,7 @@ const MobileNav = ({ handleClick, selection }) => {
                                 mobile='true'
                             >Home</StyledLink>
                             <StyledLink 
-                                to='/projects' 
+                                to='/about' 
                                 id={1}
                                 onClick={(e) => {
                                     handleClick(e);
@@ -54,9 +54,9 @@ const MobileNav = ({ handleClick, selection }) => {
                                 }}
                                 selected={selection === 1}
                                 mobile='true'
-                            >Projects</StyledLink>
+                            >About</StyledLink>
                             <StyledLink 
-                                to='/skills' 
+                                to='/projects' 
                                 id={2}
                                 onClick={(e) => {
                                     handleClick(e);
@@ -64,9 +64,9 @@ const MobileNav = ({ handleClick, selection }) => {
                                 }}
                                 selected={selection === 2}
                                 mobile='true'
-                            >Skills</StyledLink>
+                            >Projects</StyledLink>
                             <StyledLink 
-                                to='/about' 
+                                to='/contact' 
                                 id={3}
                                 onClick={(e) => {
                                     handleClick(e);
@@ -74,27 +74,7 @@ const MobileNav = ({ handleClick, selection }) => {
                                 }}
                                 selected={selection === 3}
                                 mobile='true'
-                            >About</StyledLink>
-                            <StyledLink 
-                                to='/contact'
-                                id={4}
-                                onClick={(e) => {
-                                    handleClick(e);
-                                    handleMenuClick();
-                                }}
-                                selected={selection === 4}
-                                mobile='true'
                             >Contact</StyledLink>
-                            <StyledLink 
-                                to='/resume'
-                                id={5}
-                                onClick={(e) => {
-                                    handleClick(e);
-                                    handleMenuClick();
-                                }}
-                                selected={selection === 5}
-                                mobile='true'
-                            >Resume</StyledLink>
                             </MobileNavContainer>
                         )}
                     </Motion>

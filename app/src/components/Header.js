@@ -18,20 +18,14 @@ const Header = () => {
             case '/':
                 setSelection(0);
                 break;
-            case '/projects':
+            case '/about':
                 setSelection(1);
                 break;
-            case '/skills':
+            case '/projects':
                 setSelection(2);
                 break;
-            case '/about':
-                setSelection(3);
-                break;
             case '/contact':
-                setSelection(4);
-                break;
-            case '/resume':
-                setSelection(5);
+                setSelection(3);
                 break;
             default:
                 setSelection(0);
