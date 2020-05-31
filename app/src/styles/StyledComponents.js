@@ -20,7 +20,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const AboutContent = styled.div`
-    width: 800px;
+    width: 900px;
     border: 4px solid green;
     margin-left: 30px;
     h1 {
@@ -36,6 +36,8 @@ export const AboutContent = styled.div`
     .text-container {
         font-family: ${theme.font};
         font-weight: 100;
+        line-height: 2;
+        margin-top: 15px;
         color: ${theme.colors.white};
         font-size: 1.2rem;
         text-align: center;
@@ -55,6 +57,35 @@ export const AboutImg = styled.img`
     height: 200px;
     border-radius: 50%;
 `;
+
+export const SkillsContainer = styled.div`
+    display: flex;
+    border: 4px solid red;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 20px;
+    ${theme.breakpoints.tablet}{
+        flex-direction: column;
+    }
+`;
+
+export const SkillsContent = styled.div`
+    h1 {
+        font-family: ${theme.font};
+        font-weight: 500;
+        color: ${theme.colors.green};
+        font-size: 2rem;
+        text-align: center;
+            ${theme.breakpoints.tablet}{
+                font-size: 1.5rem;
+            }
+    }
+    div {
+        
+    }
+`;
+
+
 
 //Projects Page Styles
 export const ProjectsBody = styled.section`
