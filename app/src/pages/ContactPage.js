@@ -1,10 +1,11 @@
 import React from 'react';
+import { ContactBody } from '../styles/StyledComponents'
 
 const ContactPage = () => {
     return (
-        <div>
-            Contact Page
-        </div>
+        <ContactBody>
+            
+        </ContactBody>
     );
 }
 

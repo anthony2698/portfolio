@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import { useHistory } from 'react-router-dom';
 
 import DesktopNav from './NavBar/DesktopNav';
 import MobileNav from './NavBar/MobileNav';
-import { useMediaQuery } from 'react-responsive';
-import { useHistory } from 'react-router-dom';
+
 
 const Header = () => {
     const[selection, setSelection] = useState(0);

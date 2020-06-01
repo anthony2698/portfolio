@@ -1,11 +1,11 @@
 import React from 'react';
-
+import { ProjectsBody } from '../styles/StyledComponents'
 
 const ProjectsPage = () => {
     return (
-        <div>
-            Projects Page
-        </div>
+        <ProjectsBody>
+            
+        </ProjectsBody>
     );
 }
 

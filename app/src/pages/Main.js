@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 import { Motion, spring } from 'react-motion';
 import { useMediaQuery } from 'react-responsive';
 import theme from '../styles/theme';
-import { MainContainer, ButtonLink, LinkedInLogo, GitHubLogo } from '../styles/GlobalStyles';
+import { MainContainer, ButtonLink, LinkedInLogo, GitHubLogo, ArrowToRightLogo } from '../styles/GlobalStyles';
 
 const Main = () => {
     const isTablet = useMediaQuery({
@@ -39,7 +39,7 @@ const Main = () => {
                                 <GitHubLogo />
                             </ButtonLink>
                             <ButtonLink>
-                                <div className='button'>Take Tour</div>
+                                <ArrowToRightLogo />
                             </ButtonLink>
                         </div>
                     </div>

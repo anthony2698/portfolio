@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Github, Linkedin} from '@styled-icons/boxicons-logos';
+import { Github, Linkedin } from '@styled-icons/boxicons-logos';
+import { ArrowToRight } from '@styled-icons/boxicons-regular/ArrowToRight'
 import theme from './theme';
 
 import { Link } from 'react-router-dom'
@@ -50,7 +51,7 @@ export const MobileNavContainer = styled.nav`
 // Main Page Styles
 export const MainContainer = styled.div`
     position: relative;
-    height: calc(100vh - 85px);
+    height: calc(100vh - 80px);
     .text-container {
         display: flex;
         flex-wrap: nowrap;
@@ -70,19 +71,22 @@ export const MainContainer = styled.div`
             font-size: ${theme.fontSizes.titleLine};
             text-align: left;
             ${theme.breakpoints.tablet}{
-                font-size: 2rem;
+                font-size: 1rem;
             }
         }
         h2 { 
             margin-bottom: 15px;
             font-family: ${theme.font};
             font-weight: 700;
-            color: ${theme.colors.lightestNavy};
+            color: ${theme.colors.white};
             font-size: ${theme.fontSizes.titles};
             text-align: left;
             ${theme.breakpoints.tablet}{
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
+        }
+        ${theme.breakpoints.tablet}{
+            margin-bottom: 100px;
         }
     }
     .button-container {
@@ -97,10 +101,10 @@ export const MainContainer = styled.div`
                justify-content: center;
                align-items: center;
                border: 1px solid ${theme.colors.green};
-               padding: 10px;
+               padding: 15px;
                border-radius: 5px;
                font-family: ${theme.font};
-               font-size: 1.1rem;
+               font-size: 1rem;
                width: 120px;
                height: 30px;
                margin: 10px;
@@ -132,4 +136,32 @@ export const GitHubLogo = styled(Github)`
 export const LinkedInLogo = styled(Linkedin)`
     color: ${theme.colors.green};
     width: 50px;
+`;
+
+export const ArrowToRightLogo = styled(ArrowToRight)`
+    color: ${theme.colors.green};
+    width: 50px;
+`;
+
+// Title Styles 
+export const TitleContainer = styled.div`
+    margin: 0 auto;
+    padding: 25px 0;
+    display: flex;
+    border: 2px solid yellow;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: ${theme.colors.white};
+        font-size: 3rem;
+        font-family: ${theme.font};
+    }
+    div {
+        position: relative;
+        width: 100px;
+        height: 2px;
+        margin-top: 10px;
+        background-color: ${theme.colors.green};
+        -webkit-appearance: none;
+    }
 `;
