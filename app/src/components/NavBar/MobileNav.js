@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Motion, spring } from 'react-motion';
 import HamburgerMenu from 'react-hamburger-menu';
-
+import { Logo } from '../../styles/GlobalStyles'
 import { HeaderContainer, MobileContainer, StyledLink, MobileNavContainer } from '../../styles/GlobalStyles';
 import theme from '../../styles/theme';
 
@@ -20,12 +20,12 @@ const MobileNav = ({ handleClick, selection }) => {
             {style => (
                 <HeaderContainer expand={open} style={{height: style.height}}>
                     <MobileContainer>
-                        <img></img>
+                        <Logo>AC</Logo>
                         <div className='hamburger-container'>
                             <HamburgerMenu
                                 isOpen={open}
                                 menuClicked={handleMenuClick}
-                                color={theme.colors.teal}
+                                color={theme.colors.green}
                             />
                         </div>
                     </MobileContainer>
