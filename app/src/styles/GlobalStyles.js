@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Github, Linkedin } from '@styled-icons/boxicons-logos';
 import { ArrowToRight } from '@styled-icons/boxicons-regular/ArrowToRight'
 import theme from './theme';
-
 import { Link } from 'react-router-dom'
 
 // Header Styles
@@ -71,7 +70,7 @@ export const MainContainer = styled.div`
             font-size: ${theme.fontSizes.titleLine};
             text-align: left;
             ${theme.breakpoints.tablet}{
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
         h2 { 
@@ -82,7 +81,7 @@ export const MainContainer = styled.div`
             font-size: ${theme.fontSizes.titles};
             text-align: left;
             ${theme.breakpoints.tablet}{
-                font-size: 2.5rem;
+                font-size: 3rem;
             }
         }
         ${theme.breakpoints.tablet}{
@@ -144,11 +143,11 @@ export const ArrowToRightLogo = styled(ArrowToRight)`
 `;
 
 // Title Styles 
+
 export const TitleContainer = styled.div`
     margin: 0 auto;
     padding: 25px 0;
     display: flex;
-    border: 2px solid yellow;
     flex-direction: column;
     align-items: center;
     h1 {
@@ -164,4 +163,14 @@ export const TitleContainer = styled.div`
         background-color: ${theme.colors.green};
         -webkit-appearance: none;
     }
+`;
+
+//Logo Styles
+
+export const Logo = styled.h1`
+    font-family: ${theme.fontLogo};
+    color: ${theme.colors.green};
+    font-size: 4rem;
+    padding-left: 15px;
+    cursor: pointer;
 `;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import SkillsCard from '../components/about/SkillsCard';
+import SkillsCard from './SkillsCard';
 import { skillData } from '../../data/data';
 
-export default () => {
+const SkillsList = () => {
     const [ skills, setSkills ] = useState([]);
 
     useEffect(() => {
@@ -10,10 +10,12 @@ export default () => {
     }, [])
 
     return(
-        <div>
+        <div className='skills'>
             {skills.map(skill => {
                 return <SkillsCard skill={skill} key={skill.id}/>
             })}
         </div>
     );
 }
+
+export default SkillsList;

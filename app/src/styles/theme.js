@@ -19,6 +19,7 @@ const theme = {
         desktop: '@media (max-width: 800px'
     },
     font: 'Roboto Mono',
+    fontLogo: 'Poiret One'
 }
 
 export default theme;

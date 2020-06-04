@@ -32,9 +32,9 @@ const Main = () => {
                             <ButtonLink>
                                 <div className='button'>My Resume</div>
                             </ButtonLink>
-                            <ButtonLink>
+                            <a href='https://www.linkedin.com/in/anthony-carrillo-55968a16b/'>
                                 <LinkedInLogo />
-                            </ButtonLink>
+                            </a>
                             <ButtonLink>
                                 <GitHubLogo />
                             </ButtonLink>

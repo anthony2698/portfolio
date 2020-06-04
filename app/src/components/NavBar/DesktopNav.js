@@ -1,10 +1,10 @@
 import React from 'react';
-import { HeaderContainer, StyledLink } from '../../styles/GlobalStyles';
+import { HeaderContainer, StyledLink, Logo } from '../../styles/GlobalStyles';
 
 const DesktopNav = ({ handleClick, selection }) => {
     return (
         <HeaderContainer>
-            <img></img>
+            <Logo>AC</Logo>
                 <nav>
                     <StyledLink
                         to='/'

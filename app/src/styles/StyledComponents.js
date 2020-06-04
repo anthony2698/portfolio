@@ -1,16 +1,23 @@
 import styled from 'styled-components';
 import theme from './theme';
+import { Javascript } from '@styled-icons/boxicons-logos'
+import { GitBranch } from '@styled-icons/boxicons-regular';
+import { DeveloperBoard, DataUsage } from '@styled-icons/material';
+import { PersonDoneOutline } from '@styled-icons/evaicons-outline';
+import { Database } from '@styled-icons/fa-solid';
 
 
 //About Page Styles
 export const AboutBody = styled.section`
-    height: calc(100vh - 80px);
+    height: calc(110vh - 80px);
     background-color: ${theme.colors.darkNavy};
+    ${theme.breakpoints.tablet}{
+        height: 225vh;
+    }
 `;
 
 export const AboutContainer = styled.div`
     display: flex;
-    border: 4px solid red;
     justify-content: space-evenly;
     align-items: center;
     margin: 20px 20px;
@@ -21,9 +28,8 @@ export const AboutContainer = styled.div`
 
 export const AboutContent = styled.div`
     width: 900px;
-    border: 4px solid green;
     margin-left: 30px;
-    h1 {
+    .heading {
         font-family: ${theme.font};
         font-weight: 500;
         color: ${theme.colors.green};
@@ -53,39 +59,102 @@ export const AboutContent = styled.div`
 `;
 
 export const AboutImg = styled.img`
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 `;
 
 export const SkillsContainer = styled.div`
     display: flex;
-    border: 4px solid red;
     justify-content: space-evenly;
     align-items: center;
     margin: 20px 20px;
     ${theme.breakpoints.tablet}{
         flex-direction: column;
+        margin-right: 45px;
     }
 `;
 
 export const SkillsContent = styled.div`
-    h1 {
+    margin-top: 20px;
+    margin-left: 25px;
+    .subHeading {
         font-family: ${theme.font};
         font-weight: 500;
         color: ${theme.colors.green};
-        font-size: 2rem;
+        font-size: 2.7rem;
         text-align: center;
             ${theme.breakpoints.tablet}{
-                font-size: 1.5rem;
+                font-size: 2.5rem;
             }
     }
-    div {
-        
+    .skills {
+        margin-top: 40px;
+        width: 95vw;
+        height: 40vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        ${theme.breakpoints.tablet}{
+            height: 100vh;
+        }
     }
 `;
 
+export const SkillCardContainer = styled.div`
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ${theme.breakpoints.tablet}{
+        width: 100%
+    }
+`;
 
+export const SkillHeader = styled.h1`
+    font-family: ${theme.font};
+    color: ${theme.colors.slate};
+    font-size: 1.5rem;
+`;
+
+export const SkillText = styled.p`
+    font-family: ${theme.font};
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: ${theme.colors.green};
+    text-align: center;
+`;
+
+export const JavaScriptIcon = styled(Javascript)`
+    color: ${theme.colors.slate};
+    width: 60px;
+`;
+
+export const BackEndIcon = styled(DeveloperBoard)`
+    color: ${theme.colors.slate};
+    width: 60px;
+`;
+
+export const VersionControlIcon = styled(GitBranch)`
+    color: ${theme.colors.slate};
+    width: 60px;
+`;
+
+export const IndustryKnowledgeIcon = styled(PersonDoneOutline)`
+    color: ${theme.colors.slate};
+    width: 60px;
+`;
+
+export const DataStructuresIcon = styled(DataUsage)`
+    color: ${theme.colors.slate};
+    width: 60px;
+`;
+
+export const DataBaseIcon = styled(Database)`
+    color: ${theme.colors.slate};
+    width: 60px;
+`;
 
 //Projects Page Styles
 export const ProjectsBody = styled.section`
