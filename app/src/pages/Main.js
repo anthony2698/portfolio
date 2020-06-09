@@ -35,10 +35,10 @@ const Main = () => {
                             <a href='https://www.linkedin.com/in/anthony-carrillo-55968a16b/'>
                                 <LinkedInLogo />
                             </a>
-                            <ButtonLink>
+                            <a href='https://github.com/anthony2698'>
                                 <GitHubLogo />
-                            </ButtonLink>
-                            <ButtonLink>
+                            </a>
+                            <ButtonLink to='/about'>
                                 <ArrowToRightLogo />
                             </ButtonLink>
                         </div>

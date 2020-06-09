@@ -40,12 +40,12 @@ export const projectData = [
 export const skillData = [
     {
         id: 1,
-        skillHeader: 'Front-End Knowlodge',
+        skillHeader: 'Front-End',
         skills: 'React.js, HTML, CSS, LESS'
     },
     {
         id: 2,
-        skillHeader: 'Back-End Knowlodge',
+        skillHeader: 'Back-End',
         skills: 'Node.js/Express, Postman API'
     },
     {
@@ -55,8 +55,8 @@ export const skillData = [
     },
     {
         id: 4,
-        skillHeader: 'Industry Knowledge',
-        skills: 'Agile Project Management, Software Development'
+        skillHeader: 'Adaptable',
+        skills: 'Comfortable learning new stacks'
     },
     {
         id: 5,
