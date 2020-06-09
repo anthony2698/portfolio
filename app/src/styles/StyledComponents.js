@@ -9,10 +9,10 @@ import { Database } from '@styled-icons/fa-solid';
 
 //About Page Styles
 export const AboutBody = styled.section`
-    height: calc(110vh - 80px);
+    height: calc(130vh - 80px);
     background-color: ${theme.colors.darkNavy};
     ${theme.breakpoints.tablet}{
-        height: 225vh;
+        height: 320vh;
     }
 `;
 
@@ -22,7 +22,7 @@ export const AboutContainer = styled.div`
     align-items: center;
     margin: 20px 20px;
     ${theme.breakpoints.tablet}{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 `;
 
@@ -33,10 +33,10 @@ export const AboutContent = styled.div`
         font-family: ${theme.font};
         font-weight: 500;
         color: ${theme.colors.green};
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
             ${theme.breakpoints.tablet}{
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
     }
     .text-container {
@@ -44,22 +44,29 @@ export const AboutContent = styled.div`
         font-weight: 100;
         line-height: 2;
         margin-top: 15px;
+        margin-right: 15px;
         color: ${theme.colors.white};
         font-size: 1.2rem;
-        text-align: center;
+        text-align: justify;
             ${theme.breakpoints.tablet}{
                 font-size: 1.5rem;
             }
+    }
+    .link {
+        text-decoration: none;
+        font-weight: 700;
     }
     ${theme.breakpoints.tablet}{
         text-align: center;
         margin: 20px 20px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 `;
 
 export const AboutImg = styled.img`
-    width: 300px;
+    width: 340px;
     height: 300px;
     border-radius: 50%;
 `;
@@ -76,7 +83,7 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsContent = styled.div`
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 25px;
     .subHeading {
         font-family: ${theme.font};
@@ -160,6 +167,16 @@ export const DataBaseIcon = styled(Database)`
 export const ProjectsBody = styled.section`
     height: calc(100vh - 80px);
     background-color: ${theme.colors.darkNavy};
+    border: 2px solid yellow;
+`;
+
+export const ProjectsContent = styled.div`
+    border: 2px solid yellow;
+    width: 900px;
+`;
+
+export const ProjectsContainer = styled.div`
+    
 `;
 
 // Contact Page Styles

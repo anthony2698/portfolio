@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './Title';
-import ProfileImage from '../assests/me.jpg';
+import ProfileImage from '../assests/newPic.JPG';
 import { AboutBody, AboutContainer, AboutContent, AboutImg, SkillsContainer, SkillsContent } from '../styles/StyledComponents'
 import SkillsList from '../components/About/SkillsList';
 
@@ -12,8 +12,8 @@ const AboutPage = () => {
                     <AboutContent>
                         <h1 className='heading'>Who Am I?</h1>
                         <div className='text-container'>
-                            Hello! I'm Anthony Carrillo, a software engineering student at <span>Lambda School</span>.
-                            I enjoy creating websites and applications. My goal is to always provide clean interfaces and to write efficent code. 
+                            Hello! I'm Anthony Carrillo, currently a software engineering student at <a className='link' href='https://lambdaschool.com/'>Lambda School</a>.
+                            I enjoy creating modern websites and applications. My goal is to always provide clean interfaces and to manageable code. 
                             Im currently seeking for a position in the
                             tech industry to further my knowlodge on software development.
                         </div>
