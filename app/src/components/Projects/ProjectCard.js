@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const ProjectCard = () => {
     return (
         <div>
-            Projects Page
+            HELLO
         </div>
     );
 }
