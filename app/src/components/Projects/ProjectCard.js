@@ -78,12 +78,12 @@ const ProjectCard = ({ project }) => {
                 {(project.url || project.github ) && (
                     <div className='card-footer'>
                         {project.url && (
-                            <a href={project.deployed} target='_blank'>
+                            <a href={project.deployed} target='_blank' rel="noopener noreferrer" >
                                 Web
                             </a>
                         )}
                         {project.github && (
-                            <a href={project.github} target='_blank'>
+                            <a href={project.github} target='_blank' rel="noopener noreferrer" >
                                 Github
                             </a>
                         )}  
