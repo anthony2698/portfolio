@@ -1,14 +1,13 @@
 import React from 'react';
 import Title from './Title';
-import { ProjectsBody, ProjectsContent } from '../styles/StyledComponents'
+import { ProjectsBody } from '../styles/StyledComponents.js';
+import Projects from '../components/Projects/Projects.js';
 
 const ProjectsPage = () => {
     return (
         <ProjectsBody>
             <Title title='Featured Projects'/>
-            <ProjectsContent>
-                
-            </ProjectsContent>
+            <Projects />
         </ProjectsBody>
     );
 }

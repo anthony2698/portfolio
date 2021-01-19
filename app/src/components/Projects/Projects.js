@@ -1,15 +1,21 @@
 import React, { useState, useEffect }from 'react'
-import { projectData } from '../../data'
+import { projectData } from '../../data/data.js';
+import {  ProjectsContent } from '../../styles/StyledComponents.js';
+import ProjectCard from '../Projects/ProjectCard.js';
 
 const Projects = () => {
-    const [ data, setData ] = useState([]);
+    const [ projects, setProjects ] = useState([]);
 
     useEffect(() => {
-        setData(projectData);
+        setProjects(projectData);
     }, [])
 
     return(
-        <div></div>
+        <ProjectsContent>
+            {projects.map(project => {
+                return <ProjectCard key={project.id} project={project}/>
+            })}
+        </ProjectsContent>
     )
 }
 

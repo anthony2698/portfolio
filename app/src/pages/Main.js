@@ -29,9 +29,6 @@ const Main = () => {
                             <h1>specializing in building modern web applications.</h1>
                         </div>
                         <div className='button-container'>
-                            <ButtonLink>
-                                <div className='button'>My Resume</div>
-                            </ButtonLink>
                             <a href='https://www.linkedin.com/in/anthony-carrillo-55968a16b/'>
                                 <LinkedInLogo />
                             </a>
