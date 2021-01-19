@@ -165,22 +165,48 @@ export const DataBaseIcon = styled(Database)`
 
 //Projects Page Styles
 export const ProjectsBody = styled.section`
-    height: calc(100vh - 80px);
+    height: 120vh;
     background-color: ${theme.colors.darkNavy};
-    border: 2px solid yellow;
 `;
 
 export const ProjectsContent = styled.div`
-    border: 2px solid yellow;
-    width: 900px;
-`;
-
-export const ProjectsContainer = styled.div`
-    
+    height: 100%
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 // Contact Page Styles
 export const ContactBody = styled.section`
     height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: ${theme.colors.darkNavy};
+`;
+
+export const ContactHeading = styled.h2`
+    font-family: ${theme.font};
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 150px;
+    color: ${theme.colors.green};
+`;
+
+export const Description = styled.p`
+    font-family: ${theme.font};
+    font-size: 2em;
+    margin-top: 70px;
+    text-align: center;
+    width: 800px;
+    color: ${theme.colors.green};
+`;
+
+export const Link = styled.a`
+    font-family: ${theme.font};
+    font-size: 2em;
+    margin-top: 100px;
+    text-align: center;
+    color: ${theme.colors.green};
 `;

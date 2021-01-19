@@ -1,40 +1,22 @@
 export const projectData = [
     {
         id: 1, 
-        projectName:`Bernie's Paella`,
-        techStack: 'React.js',
-        projectDescription: 'A company site to order food.',
-        img: '',
-        github: '',
+        name:`Human Rights - Police Use of Force Tracker`,
+        stack: 'HTML/CSS | JavaScript | React | Postgres | Node.js',
+        description: 'Police Use of Force Tracker is a web application that allows journalist, or everyday people to visualize police force in the United States.',
+        img: '/assests/HumanRights.png',
+        github: 'https://github.com/Lambda-School-Labs/human-rights-first-fe-a',
         deployed: ''
     },
     {
         id: 2, 
-        projectName:`Bernie's Paella`,
-        techStack: 'React.js',
-        projectDescription: 'A company site to order food.',
-        img: '',
-        github: '',
+        name:`Spotify Profile`,
+        stack: 'React | Node.js | Express | Spotify API',
+        description: 'A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.',
+        img: '/assests/SpotifyProfile.png',
+        github: 'https://github.com/anthony2698/spotify-profile',
         deployed: ''
     },
-    {
-        id: 3, 
-        projectName:`Bernie's Paella`,
-        techStack: 'React.js',
-        projectDescription: 'A company site to order food.',
-        img: '',
-        github: '',
-        deployed: ''
-    },
-    {
-        id: 4, 
-        projectName:`Bernie's Paella`,
-        techStack: 'React.js',
-        projectDescription: 'A company site to order food.',
-        img: '',
-        github: '',
-        deployed: ''
-    }
 ]
 
 export const skillData = [
