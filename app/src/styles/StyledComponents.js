@@ -165,7 +165,7 @@ export const DataBaseIcon = styled(Database)`
 
 //Projects Page Styles
 export const ProjectsBody = styled.section`
-    height: 120vh;
+    height: 100%;
     background-color: ${theme.colors.darkNavy};
 `;
 
@@ -201,12 +201,18 @@ export const Description = styled.p`
     text-align: center;
     width: 800px;
     color: ${theme.colors.green};
+    ${theme.breakpoints.tablet}{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+     }
 `;
 
-export const Link = styled.a`
+export const ContactLink = styled.a`
     font-family: ${theme.font};
     font-size: 2em;
     margin-top: 100px;
+
     text-align: center;
     color: ${theme.colors.green};
 `;
