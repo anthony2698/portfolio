@@ -13,7 +13,7 @@ const AboutPage = () => {
                         <h1 className='heading'>Who Am I?</h1>
                         <div className='text-container'>
                             Hello! I'm Anthony Carrillo, currently a software engineering student at <a className='link' href='https://lambdaschool.com/'>Lambda School</a>.
-                            I enjoy creating modern websites and applications. My goal is to always provide clean interfaces and to manageable code. 
+                            I enjoy creating modern websites and applications. My goal is to always provide clean interfaces and manageable code. 
                             Im currently seeking for a position in the
                             tech industry to further my knowlodge on software development.
                         </div>
