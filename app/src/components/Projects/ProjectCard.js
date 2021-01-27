@@ -42,7 +42,7 @@ const Card = styled.div`
     .card{
         img{
             margin: 10px;
-            width: 400px;
+            width: 275px;
             height: 250px;
         }
         .card-footer{

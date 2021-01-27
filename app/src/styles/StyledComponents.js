@@ -179,7 +179,7 @@ export const ProjectsContent = styled.div`
 
 // Contact Page Styles
 export const ContactBody = styled.section`
-    height: calc(100vh - 80px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +212,7 @@ export const ContactLink = styled.a`
     font-family: ${theme.font};
     font-size: 2em;
     margin-top: 100px;
-
+    margin-bottom: 100px;
     text-align: center;
     color: ${theme.colors.green};
 `;
