@@ -1,6 +1,6 @@
- import React from 'react';
+import React from 'react';
 import Title from './Title';
-import { ContactBody, ContactHeading, Description, Link } from '../styles/StyledComponents'
+import { ContactBody, ContactHeading, Description, ContactLink } from '../styles/StyledComponents'
 
 const ContactPage = () => {
     return (
@@ -13,9 +13,9 @@ const ContactPage = () => {
                 Whether you have a question or just want to say hi, email me!
             </Description>
 
-            <Link className="email-link" href={`mailto:carrilloanthony2698@gmail.com`}>
+            <ContactLink className="email-link" href={`mailto:carrilloanthony2698@gmail.com`}>
                 Say Hello
-            </Link>
+            </ContactLink>
         </ContactBody>
     );
 }

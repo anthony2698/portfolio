@@ -14,7 +14,7 @@ const Card = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: ${theme.colors.darkNavy};
+    background-color: ${theme.colors.lightestNavy};
     .info{
         h2 {
             color:${theme.colors.green};
@@ -53,6 +53,7 @@ const Card = styled.div`
         }
     a {
         color:${theme.colors.green};
+        margin-right: 4%;
     }
     }
 `;
@@ -63,13 +64,13 @@ const ProjectCard = ({ project }) => {
                 <h2>{project.name}</h2>
                 <p>{project.description}</p>
                 <h4>{project.stack}</h4>
-                {/* <div className='task-container'>
+                <div className='task-container'>
                     <ul>
                         {project.tasks.map(task => {
                             return <li key={task}>{task}</li>
                         })}
                     </ul>
-                </div> */}
+                </div>
             </div>
             <div className='card'>
                 {project.img && (
@@ -77,9 +78,9 @@ const ProjectCard = ({ project }) => {
                 )}
                 {(project.url || project.github ) && (
                     <div className='card-footer'>
-                        {project.url && (
+                        {project.deployed && (
                             <a href={project.deployed} target='_blank' rel="noopener noreferrer" >
-                                Web
+                                Deployed
                             </a>
                         )}
                         {project.github && (
